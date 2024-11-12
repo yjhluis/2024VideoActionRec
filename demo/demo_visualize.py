@@ -117,7 +117,6 @@ def main():
     if args.cfg_options is not None:
         cfg.merge_from_dict(args.cfg_options)
 
-    is_full = True
 
     # Build the recognizer from a config file and checkpoint file/url
     model = init_recognizer(cfg, args.checkpoint, device=args.device)
