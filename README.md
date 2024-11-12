@@ -36,6 +36,15 @@ cd project
 pip install -v -e .
 ```
 
+## Run
+Video input Video output
+```
+python demo/demo_visualize.py configs/recognition/i3d/i3d_dense_trained_by_hnu.py \
+    i3d_imagenet-pretrained-r50-heavy_8xb8-32x2x1-100e_kinetics400-rgb_trained_by_hnu_epoch_40.pth \
+    demo/167-3_cam02_dump02_place04_day_summer.mp4 tools/data/kinetics/label_map_hnu_label.txt \
+    --out-filename output.mp4
+```
+
 ## Acknowledgement
 
 
