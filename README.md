@@ -49,9 +49,9 @@ python demo/demo_visualize.py configs/recognition/i3d/i3d_dense_trained_by_hnu.p
 
 | ![사진1](resources/1_night_summer.jpg) | ![사진2](resources/2_day_spring.jpg) |
 |:-----------------:|:---------------:|
-| 투기행위 신뢰도 : 77.87% (야간)             | 투기행위 신뢰도 : 97.96% (주간)           |
+| 투기행위 신뢰도 : 0.78 (야간)             | 투기행위 신뢰도 : 0.98 (주간)           |
 | ![사진3](resources/3_day_summer.jpg) | ![사진4](resources/4_day_summer.jpg) |
-| 투기행위 신뢰도 : 91.27% (주간)             | 투기행위 신뢰도 : 92.04% (주간)           |
+| 투기행위 신뢰도 : 0.91 (주간)             | 투기행위 신뢰도 : 0.92 (주간)           |
 
 ## Acknowledgement
 
