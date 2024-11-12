@@ -38,6 +38,8 @@ pip install -v -e .
 
 ## Run
 Video input Video output
+download link (weight file) : [i3d_imagenet-pretrained-r50-heavy_8xb8-32x2x1-100e_kinetics400-rgb_trained_by_hnu_epoch_40.pth]()
+download link (demo video, dump) : [i3d_imagenet-pretrained-r50-heavy_8xb8-32x2x1-100e_kinetics400-rgb_trained_by_hnu_epoch_40.pth]()
 ```
 python demo/demo_visualize.py configs/recognition/i3d/i3d_dense_trained_by_hnu.py \
     i3d_imagenet-pretrained-r50-heavy_8xb8-32x2x1-100e_kinetics400-rgb_trained_by_hnu_epoch_40.pth \
