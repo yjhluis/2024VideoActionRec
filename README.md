@@ -45,6 +45,12 @@ python demo/demo_visualize.py configs/recognition/i3d/i3d_dense_trained_by_hnu.p
     --out-filename output.mp4
 ```
 
+| ![사진1](resources/1_night_summer.jpg) | ![사진2](resources/2_day_spring.jpg) |
+|:-----------------:|:---------------:|
+| 투기행위 인식률 : 77.87% (야간)             | 투기행위 인식률 : 97.96% (주간)           |
+| ![사진3](resources/3_day_summer.jpg) | ![사진4](resources/4_day_summer.jpg) |
+| 투기행위 인식률 : 91.27% (주간)             | 투기행위 인식률 : 92.04% (주간)           |
+
 ## Acknowledgement
 
 
