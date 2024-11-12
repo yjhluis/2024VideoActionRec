@@ -153,7 +153,8 @@ class ActionVisualizer(Visualizer):
                        out_type: str = 'img',
                        target_resolution: Optional[Tuple[int]] = None,
                        step: int = 0,
-                       fps: int = 4) -> None:
+                       fps: int = 4,
+                       actions = None) -> None:
         """Draw datasample and save to all backends.
 
         - If ``out_path`` is specified, all storage backends are ignored
@@ -245,6 +246,15 @@ class ActionVisualizer(Visualizer):
                 ]
                 prefix = 'Prediction: '
                 texts.append(prefix + ('\n' + ' ' * len(prefix)).join(labels))
+
+            if actions:
+                # top5 actions
+                texts.append(f'\n[top 3 actions]')
+                for idx, (k, v) in enumerate(actions):
+                    if idx == 3:
+                        break
+                    texts.append(f'{k}, {v}')
+                    
 
             img_scale = _get_adaptive_scale(frame.shape[:2])
             _text_cfg = {
